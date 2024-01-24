@@ -54,7 +54,11 @@ rule bwa_index:
         mem_gb = 188, 
         runtime = 86400 #1d in s
     shell:
-        "bwa-mem2 index -p {output.index} {input.fasta}; samtools faidx {input.fasta}; touch {output.index}"
+        """
+        bwa-mem2 index -p {output.index} {input.fasta}
+        samtools faidx {input.fasta}
+        touch {output.index}
+        """
 
 # Readmapping
 rule bwa_readmap:

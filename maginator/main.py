@@ -30,6 +30,7 @@ WORKFLOW_PHYLO = os.path.join(_ROOT, 'workflow', 'phylo.Snakefile')
 WORKFLOW_GENE_TAX = os.path.join(_ROOT, 'workflow', 'gene_tax.Snakefile')
 WORKFLOW_BENCHMARK = os.path.join(_ROOT, 'workflow', 'benchmark.Snakefile')
 WORKFLOW_SIGNATURE_READS = os.path.join(_ROOT, 'workflow', 'signature_reads.Snakefile')
+WORKFLOW_UNKNOWN_BUGS = os.path.join(_ROOT, 'workflow', 'unknown_bugs.Snakefile')
 
 def cli():
     
